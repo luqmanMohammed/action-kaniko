@@ -1,5 +1,5 @@
 # kaniko.yml
-name: "Kaniko builder"
+name: "Kaniko builder Docker Image"
 description: "Build and push docker images using Kaniko"
 branding:
   icon: anchor
@@ -62,4 +62,4 @@ outputs:
     description: "Full reference to the built image with registry and tag"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://luqmanmohammed/action-kaniko:latest"
